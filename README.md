@@ -32,10 +32,12 @@ From inside the `user-service/` directory:
 
 ```bash
 docker build -t user-service .
+```
 
 ### 2. Run the container
 ```bash
 docker run -d -p 5050:5050 --name user-service-container user-service
+```
 
 -d runs it in the background
 -p 5050:5050 maps local port to container port
@@ -47,9 +49,11 @@ add a user
 curl -X POST http://localhost:5050/users \
 -H "Content-Type: application/json" \
 -d '{"name": "Jones", "email": "Jones@example.com"}'
+```
 
 get users list
 ```bash
 curl http://localhost:5050/users
+```
 
 
