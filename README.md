@@ -68,7 +68,7 @@ terraform/
 ## 🧪 How to Use
 
 1. Initialize the working directory:
-   ```bash
+```bash
    terraform init
 ```
 2. Review the plan:
